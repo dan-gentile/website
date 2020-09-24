@@ -1,3 +1,4 @@
+// Jquery for the nav menu
 const menuBtn = $('.menu-btn');
 const hamburger = $('.menu-btn__burger');
 const nav = $('.nav');

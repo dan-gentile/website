@@ -1,3 +1,5 @@
+// About Me main content styling
+
 aside {
     grid-column-start: 1;
     grid-column-end: span 2;
@@ -11,14 +13,17 @@ aside {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: span 3;
-    @include flexbox-center;
+    @include flexbox-column-center;
 
     .image {
         border-radius: 100%;
     }
+    .skills{
+        text-align: center;
+        margin-top: 10px;
+        color: $secondary-color;
+    }
 }
-
-
 
 .name {
     grid-column-start: 3;
@@ -55,7 +60,7 @@ aside {
 
         .fun-fact {
             margin: 6px 0;
-            opacity: 0.60;
+            color:$link-color;
         }
     }
 }
@@ -68,4 +73,3 @@ footer {
     @include flexbox-center;
     color: $secondary-color;
 }
-

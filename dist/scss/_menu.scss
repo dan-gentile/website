@@ -1,3 +1,4 @@
+// styling for the nav menu
 .menu-btn {
     position: absolute;
     z-index: 1;
@@ -43,13 +44,11 @@
   
         &::before {
           transform: rotate(45deg) translate(5px, 8px);
-          background-color: $secondary-color;
         }
   
         &::after {
           width: 28px;
           transform: rotate(-45deg) translate(3px, -7px);
-          background-color: $secondary-color;
         }
       }
     }
@@ -58,9 +57,8 @@
   .nav {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    opacity: 0.98;
+    right: 0;
+    width: 45vw;
     visibility: hidden;
   
     &.open {
@@ -72,12 +70,12 @@
       flex-flow: column wrap;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      height: 75px;
       overflow: hidden;
-      background: $primary-color;
+      background: $background-color;
       list-style-type: none;
       padding-right: 1rem;
-      transform: translateY(-100%);
+      transform: translateX(100%);
       @include transition-ease;
   
       &.open {
@@ -86,20 +84,19 @@
   
       &__item {
         transform: translateX(100vw);
-        @include transition-ease;
   
         &.open {
          transform: translateX(0); 
         }
   
         &.active > a {
-          color: $secondary-color;
+          color: $primary-color;
         }
       }
   
       &__link {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1rem;
         text-transform: uppercase;
         padding: 2rem 0;
         font-weight: 300;
