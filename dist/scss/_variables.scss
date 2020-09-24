@@ -1,8 +1,16 @@
 $primary-color: #333333;
 $secondary-color: #f0e9c8;
+$link-color: #696969;
 
-@mixin flexbox-center{
+@mixin flexbox-center {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexbox-column-center {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -10,6 +18,4 @@ $secondary-color: #f0e9c8;
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
 }
-
-
 

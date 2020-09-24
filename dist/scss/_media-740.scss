@@ -1,0 +1,60 @@
+@media screen and (max-width: 740px) {
+
+    body {
+        background-color: $primary-color;
+        grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
+
+        header {
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+    }
+
+    .main-image {
+        grid-row-end: 3;
+    }
+
+    .name {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        color: $secondary-color;
+
+        .social {
+            @include flexbox-center;
+
+            &-item {
+                margin: 4px;
+                color: $secondary-color;
+
+                &>a {
+                    color: $secondary-color;
+                }
+
+                &>a:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    footer {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .menu-btn__burger {
+        background-color: $secondary-color;
+
+        &::before {
+            background-color: $secondary-color;
+        }
+
+        &::after {
+            background-color: $secondary-color;
+        }
+
+    }
+
+}

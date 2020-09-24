@@ -1,16 +1,10 @@
+ header {
+     grid-column-start: 1;
+     grid-column-end: span 2;
 
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 75px;
-    background-color: $primary-color;
-}
-
-.logo{
-    position: absolute;
-    left: 60px;
-    top: .5rem;
-}
-
-
-  
+     .logo {
+         height: 75px;
+         @include flexbox-center;
+         background-color: $primary-color;
+     }
+ }

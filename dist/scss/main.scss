@@ -2,6 +2,25 @@
 @import './variables';
 @import './header';
 @import './menu';
-body{
+@import './aboutme';
+@import './media-740';
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
+    grid-template-rows: 75px minmax(380px, 1fr) minmax(380px, 1fr) 75px;
     background-color: #f2f2f2;
+    font-family: open-sans, sans-serif;
+    color: $primary-color;
 }
+
+
+a{
+    color: $link-color;
+    
+    &:hover {
+        color: $primary-color;
+    }
+}
+
