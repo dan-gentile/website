@@ -56,7 +56,7 @@ aside {
 
     .about-me {
         text-align: center;
-        padding: 6px;
+        padding: 6px 20px;
 
         .fun-fact {
             margin: 6px 0;
@@ -65,11 +65,3 @@ aside {
     }
 }
 
-footer {
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 4;
-
-    @include flexbox-center;
-    color: $secondary-color;
-}

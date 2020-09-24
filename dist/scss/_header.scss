@@ -1,5 +1,5 @@
 // Header Styling
-header {
+.index-header {
      grid-column-start: 1;
      grid-column-end: span 2;
 
@@ -9,3 +9,14 @@ header {
          background-color: $primary-color;
      }
  }
+
+ .projects-header {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+
+    .logo {
+        height: 75px;
+        @include flexbox-center;
+        background-color: $primary-color;
+    }
+}

@@ -1,0 +1,17 @@
+.index-footer {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+
+    @include flexbox-center;
+    color: $secondary-color;
+}
+
+.projects-footer{
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 5;
+    background-color: $primary-color;
+    @include flexbox-center;
+    color: $secondary-color;
+}
