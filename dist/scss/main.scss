@@ -12,7 +12,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
-    grid-template-rows: 75px minmax(380px, 1fr) minmax(380px, 1fr) 75px;
+    grid-template-rows: 75px minmax(400px, 1fr) minmax(400px, 1fr) 75px;
     background-color: $background-color;
     font-family: open-sans, sans-serif;
     color: $primary-color;
@@ -44,4 +44,5 @@ a {
 }
 
 // Media Query
-@import './media-740';
+@import './media-850';
+@import './media-project-850'

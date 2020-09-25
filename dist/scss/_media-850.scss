@@ -1,12 +1,13 @@
 // Media Query for Small Screen Size
+@import './variables';
+@media screen and (max-width: 850px) {
 
-@media screen and (max-width: 740px) {
-
-    body {
+    body.index {
         background-color: $primary-color;
         grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
+        grid-template-rows: 75px minmax(320, 1fr) minmax(320px, 1fr) 75px;
 
-        header {
+        header.index {
             grid-column-start: 2;
             grid-column-end: 2;
         }
@@ -41,7 +42,7 @@
         }
     }
 
-    footer {
+    footer.index {
         grid-column-start: 2;
         grid-column-end: 2;
     }
