@@ -39,6 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .two {
@@ -86,6 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .three {
@@ -129,6 +131,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .thumbnail-image {
