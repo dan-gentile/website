@@ -1,51 +1,57 @@
 // Media Query for Small Screen Size
 @import './variables';
 @media screen and (max-width: 850px) {
-
     body.index {
         background-color: $primary-color;
         grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
-        grid-template-rows: 75px minmax(320, 1fr) minmax(320px, 1fr) 75px;
-
+        // grid-template-rows: 75px minmax(400px, 1fr) minmax(400px, 1fr) 75px;
         header.index {
             grid-column-start: 2;
             grid-column-end: 2;
         }
     }
-
     .main-image {
-        grid-row-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
-
     .name {
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 3;
         color: $secondary-color;
-
+        @include flexbox-column-center;
+        margin: 2rem 2rem;
+        .details {
+            @include flexbox-column-center;
+            margin: 1rem 0;
+        }
         .social {
             @include flexbox-center;
-
             &-item {
                 margin: 4px;
                 color: $secondary-color;
-
                 &>a {
                     color: $secondary-color;
                 }
-
                 &>a:hover {
                     color: $secondary-color;
                 }
             }
         }
+        .about-me {
+            line-height: 1.5rem;
+            text-align: center;
+            padding: 12px 0;
+            .fun-fact {
+                margin: 2rem 0;
+                color: $link-color;
+            }
+        }
     }
-
     footer.index {
         grid-column-start: 2;
         grid-column-end: 2;
     }
-
-    @import './menu-mobile';
+    @import './menu-850';
 }

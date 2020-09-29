@@ -6,7 +6,6 @@
 @import './aboutme';
 @import './footer';
 @import './projects';
-
 // body styling 
 .index {
     display: grid;
@@ -18,26 +17,18 @@
     color: $primary-color;
 }
 
-.projects{
+.projects {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr minmax(360px, 1fr) minmax(360px, 1fr) 1fr;
-    grid-template-rows: 75px minmax(320px, 1fr) minmax(320px, 1fr)  minmax(320px, 1fr) 75px;
+    grid-template-rows: 75px minmax(320px, 1fr) minmax(320px, 1fr) minmax(320px, 1fr) 75px;
     background-color: $background-color;
     font-family: open-sans, sans-serif;
-
 }
-
-
-
-
-
-
 
 // link styling
 a {
     color: $link-color;
-
     &:hover {
         color: $primary-color;
     }

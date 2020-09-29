@@ -17,6 +17,19 @@ $background-color:#f2f2f2;
     align-items: center;
 }
 
+@mixin flexbox-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+@mixin flexbox-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
 }

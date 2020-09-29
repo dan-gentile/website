@@ -12,13 +12,12 @@ aside {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: span 3;
+    grid-row-end: span 2;
     @include flexbox-column-center;
-
     .image {
         border-radius: 100%;
     }
-    .skills{
+    .skills {
         text-align: center;
         margin-top: 10px;
         color: $secondary-color;
@@ -29,39 +28,40 @@ aside {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: span 3;
-    @include flexbox-column-center;
-
+    grid-row-end: span 2;
+    @include flexbox-column-left;
+    margin: 1rem 2rem;
     .details {
-        @include flexbox-center;
-        margin: 6px 0;
+        @include flexbox-column-left;
+        margin: 1rem 0;
     }
-
     .social {
-        @include flexbox-center;
-
+        @include flexbox-left;
         &-item {
-            margin: 4px;
+            margin: 1rem;
             color: $primary-color;
-
             &>a {
                 color: $link-color;
             }
-
             &>a:hover {
                 color: $primary-color;
             }
         }
     }
-
     .about-me {
-        text-align: center;
-        padding: 6px 20px;
-
+        line-height: 1.5rem;
+        padding: 12px 0;
         .fun-fact {
-            margin: 6px 0;
-            color:$link-color;
+            margin: 2rem 0;
+            color: $link-color;
         }
     }
 }
 
+// @media screen and (max-width: 1488px) {
+//     .name {
+//         .details {
+//             text-align: right;
+//         }
+//     }
+// }

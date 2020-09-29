@@ -36,20 +36,3 @@ function toggleMenu() {
     }
 
 }
-
-// Jquery for adding on load animation to project page
-
-const articleOne = $('.one');
-const articleTwo = $('.two');
-const articleThree = $('.three');
-
-// $('document').ready(transitionIn());
-
-// function transitionIn() {
-
-//     setTimeout(function() {
-//         articleOne.addClass('ready');
-//     }, 2000)
-
-
-// }

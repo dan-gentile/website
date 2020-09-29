@@ -30,14 +30,4 @@ function toggleMenu() {
     });
     showMenu = false;
   }
-} // Jquery for adding on load animation to project page
-
-
-var articleOne = $('.one');
-var articleTwo = $('.two');
-var articleThree = $('.three'); // $('document').ready(transitionIn());
-// function transitionIn() {
-//     setTimeout(function() {
-//         articleOne.addClass('ready');
-//     }, 2000)
-// }
+}

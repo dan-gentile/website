@@ -1,0 +1,68 @@
+aside {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+  background-color: #333333;
+}
+
+.main-image {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-image .image {
+  border-radius: 100%;
+}
+.main-image .skills {
+  text-align: center;
+  margin-top: 10px;
+  color: #f0e9c8;
+}
+
+.name {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 1rem 2rem;
+}
+.name .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 1rem 0;
+}
+.name .social {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.name .social-item {
+  margin: 1rem;
+  color: #333333;
+}
+.name .social-item > a {
+  color: #696969;
+}
+.name .social-item > a:hover {
+  color: #333333;
+}
+.name .about-me {
+  line-height: 1.5rem;
+  padding: 12px 0;
+}
+.name .about-me .fun-fact {
+  margin: 2rem 0;
+  color: #696969;
+}

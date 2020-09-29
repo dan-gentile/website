@@ -2,7 +2,6 @@
   body.index {
     background-color: #333333;
     grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
-    grid-template-rows: 75px minmax(320, 1fr) minmax(320px, 1fr) 75px;
   }
   body.index header.index {
     grid-column-start: 2;
@@ -10,7 +9,8 @@
   }
 
   .main-image {
-    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
 
   .name {
@@ -19,6 +19,18 @@
     grid-row-start: 3;
     grid-row-end: 3;
     color: #f0e9c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+  }
+  .name .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
   }
   .name .social {
     display: flex;
@@ -34,6 +46,15 @@
   }
   .name .social-item > a:hover {
     color: #f0e9c8;
+  }
+  .name .about-me {
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 12px 0;
+  }
+  .name .about-me .fun-fact {
+    margin: 2rem 0;
+    color: #696969;
   }
 
   footer.index {
