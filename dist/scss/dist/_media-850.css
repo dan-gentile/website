@@ -2,6 +2,7 @@
   body.index {
     background-color: #333333;
     grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
+    grid-template-rows: 75px minmax(400px, 1fr) minmax(580px, 1fr) 75px;
   }
   body.index header.index {
     grid-column-start: 2;
@@ -9,6 +10,8 @@
   }
 
   .main-image {
+    grid-column-start: 2;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
   }

@@ -695,6 +695,8 @@ a:hover {
     background-color: #333333;
     -ms-grid-columns: 1fr minmax(360px, 1fr) 1fr;
         grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
+    -ms-grid-rows: 75px minmax(400px, 1fr) minmax(580px, 1fr) 75px;
+        grid-template-rows: 75px minmax(400px, 1fr) minmax(580px, 1fr) 75px;
   }
   body.index header.index {
     -ms-grid-column: 2;
@@ -702,6 +704,9 @@ a:hover {
     grid-column-end: 2;
   }
   .main-image {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 2;
