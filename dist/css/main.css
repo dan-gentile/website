@@ -926,8 +926,8 @@ a:hover {
   .projects {
     -ms-grid-columns: 1fr 360px 1fr;
         grid-template-columns: 1fr 360px 1fr;
-    -ms-grid-rows: 75px (minmax(360px, 1fr))[6] 75px;
-        grid-template-rows: 75px repeat(6, minmax(360px, 1fr)) 75px;
+    -ms-grid-rows: 75px (360px)[6] 75px;
+        grid-template-rows: 75px repeat(6, 360px) 75px;
   }
   .projects header.project {
     -ms-grid-column: 2;

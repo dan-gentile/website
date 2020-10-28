@@ -110,8 +110,8 @@ ul {
 .nav .menu-nav {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: space-evenly;
   height: 75px;
   overflow: hidden;
   list-style-type: none;
@@ -171,7 +171,7 @@ aside {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: span 3;
+  grid-row-end: span 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,25 +190,27 @@ aside {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: span 3;
+  grid-row-end: span 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
+  margin: 1rem 2rem;
 }
 .name .details {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 6px 0;
+  align-items: left;
+  margin: 1rem 0;
 }
 .name .social {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .name .social-item {
-  margin: 4px;
+  margin: 1rem;
   color: #333333;
 }
 .name .social-item > a {
@@ -218,11 +220,11 @@ aside {
   color: #333333;
 }
 .name .about-me {
-  text-align: center;
-  padding: 6px 20px;
+  line-height: 1.5rem;
+  padding: 12px 0;
 }
 .name .about-me .fun-fact {
-  margin: 6px 0;
+  margin: 2rem 0;
   color: #696969;
 }
 
@@ -288,6 +290,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .two {
@@ -335,6 +338,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .three {
@@ -378,6 +382,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .thumbnail-image {
@@ -424,7 +429,7 @@ a:hover {
   body.index {
     background-color: #333333;
     grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
-    grid-template-rows: 75px minmax(320, 1fr) minmax(320px, 1fr) 75px;
+    grid-template-rows: 75px minmax(400px, 1fr) minmax(580px, 1fr) 75px;
   }
   body.index header.index {
     grid-column-start: 2;
@@ -432,7 +437,10 @@ a:hover {
   }
 
   .main-image {
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
 
   .name {
@@ -441,6 +449,18 @@ a:hover {
     grid-row-start: 3;
     grid-row-end: 3;
     color: #f0e9c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+  }
+  .name .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
   }
   .name .social {
     display: flex;
@@ -456,6 +476,15 @@ a:hover {
   }
   .name .social-item > a:hover {
     color: #f0e9c8;
+  }
+  .name .about-me {
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 12px 0;
+  }
+  .name .about-me .fun-fact {
+    margin: 2rem 0;
+    color: #696969;
   }
 
   footer.index {
@@ -580,7 +609,7 @@ a:hover {
 @media screen and (max-width: 850px) {
   .projects {
     grid-template-columns: 1fr 360px 1fr;
-    grid-template-rows: 75px repeat(3, minmax(360px, 1fr)) 75px;
+    grid-template-rows: 75px repeat(6, 360px) 75px;
   }
   .projects header.project {
     grid-column-start: 2;
@@ -610,7 +639,7 @@ a:hover {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-row-end: span 1;
+    grid-row-end: span 2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 360px 360px;
@@ -629,7 +658,7 @@ a:hover {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 6;
-    grid-row-end: span 1;
+    grid-row-end: span 2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 360px 360px;
